@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'bagpakk-icomoon';
-  src: url("../fonts/bagpakk-icomoon.eot?ut4aw9");
-  src: url("../fonts/bagpakk-icomoon.eot?#iefixut4aw9") format("embedded-opentype"), url("../fonts/bagpakk-icomoon.woff?ut4aw9") format("woff"), url("../fonts/bagpakk-icomoon.ttf?ut4aw9") format("truetype"), url("../fonts/bagpakk-icomoon.svg?ut4aw9#bagpakk-icomoon") format("svg");
+  src: url("fonts/bagpakk-icomoon.eot?ut4aw9");
+  src: url("fonts/bagpakk-icomoon.eot?#iefixut4aw9") format("embedded-opentype"), url("../fonts/bagpakk-icomoon.woff?ut4aw9") format("woff"), url("../fonts/bagpakk-icomoon.ttf?ut4aw9") format("truetype"), url("../fonts/bagpakk-icomoon.svg?ut4aw9#bagpakk-icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
