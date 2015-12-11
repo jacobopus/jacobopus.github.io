@@ -81,20 +81,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #333;
 }
 
-#mockup {
-  background: #333333 url(http://bagpakk.csag.co/images/macbook.jpg) center center no-repeat fixed;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -moz-box-shadow: inset 0px 0px 8px 0px #656565;
-  -webkit-box-shadow: inset 0px 0px 8px 0px #656565;
-  -o-box-shadow: inset 0px 0px 8px 0px #656565;
-  box-shadow: inset 0px 0px 8px 0px #656565;
-  filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
-}
 
-#lead {
-  background: url(http://bagpakk.csag.co/images/blue-texture.jpg) repeat fixed;
+.lead {
+  background: url(../img/blue-texture.jpg) repeat fixed;
 }
 
 #grid .col-1, #grid .col-2, #grid .col-3, #grid .col-4, #grid .col-5, #grid .col-6, #grid .col-7, #grid .col-8, #grid .col-9, #grid .col-10, #grid .col-11 {
