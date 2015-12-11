@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #dark-section {
-  background: #333333 url(http://bagpakk.csag.co//images/dark-bg.jpg) repeat fixed;
+  background: #333333 url(../../img/dark-bg.jpg) repeat fixed;
 }
 
 #light-buttons {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .lead {
-  background: url(../img/blue-texture.jpg) repeat fixed;
+  background: url(../../img/blue-texture.jpg) repeat fixed;
 }
 
 #grid .col-1, #grid .col-2, #grid .col-3, #grid .col-4, #grid .col-5, #grid .col-6, #grid .col-7, #grid .col-8, #grid .col-9, #grid .col-10, #grid .col-11 {
