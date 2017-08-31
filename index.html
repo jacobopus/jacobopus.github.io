@@ -1,237 +1,30 @@
-<!DOCTYPE html>
-  <html lang="es-ES">
-    <head>
-      <meta charset="utf-8" /> 
-      
-      <title>G. Andrés Reyes Valdés. Profesor Ajedrez.</title>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-        
-        <link href='https://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-        
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-        
-      <style>
-          
-          .font-righteous {font-family: 'Righteous', cursive;}
-          
-          .pomegranate-bg{ background:#c0392b;}
-          .whisteria-bg  { background:#8e44ad;}
-          .belize-bg     { background:#2980b9;}
-          .wet-asphalt-bg{ background:#34495e;}
-          .clouds-bg     { background:#ecf0f1;}
-          .snow-bg       { background:#fff;}
-          .clouds-fg     { color :#ecf0f1    ;}
-          .carrot-fg     { color:#e67e22;     }
-          
-          .inset-title  {text-shadow: -1px 1px 0px #900608;}
-          
-          a:hover     { color:#f39c12;     }
-          a { color:#d35400;}
-          a:visited { color:#e74c3c;}
-          
-          .font-site-size{ font-size:1.2rem; }
-          .font-small    { font-size:0.85rem;}
-          .wet-asphalt-fg{ color:#34495e;     }
-          .pomegranate-fg{ color:#c0392b;}
-          
-          .font-carter-one{font-family: 'Carter One', cursive;}
-          .font-luckiest  {font-family: 'Luckiest Guy', cursive;}
-          .title-post{font-size:0.75rem;}
-      </style>
-    </head>
+package tarea
 
-    <body class='wet-asphalt-fg clouds-bg font-righteous font-site-size'>
-        
-        <nav>
-            <div class="nav-wrapper pomegranate-bg">
-                <a href="http://jacobopus.github.io" class="brand-logo cloud-fg" style='color:#fff;'>Profesor Ajedrez</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="http://jacobopus.github.io/blog/blog.html">Blog</a></li>
-                    <li><a href="http://jacobopus.github.io/pictograpp/pictograph.html">Pictograpp</a></li>
-                </ul>
-            </div>
-        </nav>
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 
-        <div class='container'>
-            <div class='row'>
-                
-                <h1 class='font-carter-one pomegranate-fg inset-title '>Andrés Reyes Valdés.</h1> <h6 class='font-carter-one pomegranate-fg'>A.K.A. Profesor Ajedrez, A.K.A. Dr. Jacobopus.</h6>
-            </div>
-        
-            <div class='row'>
-                <div class='divider'></div>
-                
-                <div class='col s12 m6'>
-                    <div class='section  align-justify'>
-                        <img alt='Andrés Reyes V. Profesor Ajedrez' src='http://jacobopus.github.io/img/profe-avatar.png' class='z-depth-1 responsive-img circle'/>
-                    </div>
-                </div>
-                
-                <div class='col s12 m6'>
-                    <div class='section  align-justify'>
-                        <h3 class='font-luckiest pomegranate-fg'>¡Qui'ubo!<span class='carrot-fg'>*</span></h3>
-                        <p>
-                            ¡Hola!, llegaste a mi web personal. Soy Andrés Reyes, entusiasta de la cultura <a href=''>Open Source</a> y desarrollador autodidacta.
-                        </p>
-                        <p> 
-                            Resido en los suburbios de Santiago de Chile, y trabajo en un colegio haciendo las veces de soporte técnico informático. 
-                        </p>
-                        <p>
-                            Me gusta jugar con mi hijo, andar en bicicleta, leer comics, dibujar y jugar con html, css, javascript, python y php. 
-                        </p>                        
-                    </div>
-                </div>
-                
+public class paresAzarosos
+{
 
-            </div>
-            
-            <div class='row valign-wrapper'>
-            
-                <div class='section align-justify valign'>
-                    <p>
-                            También soy Chess Developmental Instructor de la Federación Mundial de Ajedrez, Fide, y entreno al equipo de ajedrez de la escuela.
-                    </p>
-                    <p>
-                            Puedes revisar mi principal proyecto personal; <a href='http://profesorajedrez.cl'>Profesor Ajedrez</a>, con el que intento fomentar la practica de ajedrez dentro de las escuelas de mi pais.
-                    </p>
-                        
-                    <p class='carrot-fg font-small'> 
-                            * Qui'ubo es una expresión típica del campo de Chile, es una especie de saludo producto de la contracción de ¿Que hubo? (¿Que pasa?, ¿Alguna novedad?). se considera cariñosa y amable.
-                    </p>
-                </div>
-            </div>
-            
-            <div class='row'>
-                <div class='divider'></div>
-                <div class='col m4'>
-                    <div class='section'>
-                        <h4>Habilidades</h4>
-                        <ul>
-                            <li>
-                                <h6>Html</h6>
-                                <div class="progress">
-                                   
-                                    <div class="determinate" style="width: 80%"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <h6>Css</h6>
-                                <div class="progress">
-                                   
-                                    <div class="determinate" style="width: 70%"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <h6>JavaScript</h6>
-                                <div class="progress">
-                                    
-                                    <div class="determinate" style="width: 50%"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <h6>Wordpress</h6>
-                                <div class="progress">
- 
-                                    <div class="determinate" style="width: 90%"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <h6>Joomla</h6>
-                                <div class="progress">
- 
-                                    <div class="determinate" style="width: 90%"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                
-                </div>
-                
-                <div class='col m4'>
-                    <div class='section'>
-                        <h4>Experiencia</h4>
-                        <ul>
-                            <li>
-                                <p class='align-justify'>
-                                    En la actualidad me desempeño como encargado de soporte informático en el <a href='http://colegiodelvalle.cl'>Colegio del Valle</a>, en Maipú, Chile.
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <p class='align-justify'>
-                                    Como iniciativa personal dimos forma al club de ajedrez del colegio, del cual soy coach. Además ejerzo como instructor particular.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class='col m4'>
-                    <div class='section'>
-                        
-                        <h4>Proyectos</h4>
-                        
-                        <ul>
-                            <li>
-                                <p class='align-justify'>
-                                    <a href='http://profesorajedrez.cl'>Profesor Ajedrez</a>. Sitio web fundacional de mi intento personal por promover el ajedrez escolar.
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <p class='align-justify'>
-                                    <a href='http://jacobopus.github.io/pictograpp/pictograph.html'>Pictograpp</a>. Una sencilla aplicación Html5 para que los niños de primaria creen pictogramas.
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <p class='align-justify'>
-                                    Bueno, es solo una idea que tengo revoloteando hace tiempo, pero me gustaría escribir un libro de ajedrez para niños.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class='row'>
-                <div class='divider'></div>
-                
-                <div class='col s12'>
-                    <div class='section'>
-                        <p class='center-align'>
-                            Puedes contactarme <a href='mailto:chess.coach.ar@gmail.com'>en mi correo</a>, mi cuenta de <a href='https://twitter.com/ProfesorChess'>twitter</a>, o mi perfil de <a href='    https://cl.linkedin.com/in/profesorajedrez'>Linkedin</a>
-                        </p>
-                    </div>
-                </div>
-            </div>  
-            
-            <div class='row'>
-
-                  <div class='col s12'>
-                    <div class='section center-align'>
-            <a class='center-align' href="http://www.w3.org/html/logo/">
-<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-</a>
-</div>
-</div>
-        </div>
-        </div>
-        <footer class=''>
-        </footer>
-    </body>
-  </html>
+    public static void class main(String[] Args)
+	{
+	    BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
+		int num;
+		int rangoInferior = (int) (Math.random() * 99)  + 1;
+		int rangoSuperior = (int) (Math.random() * 199) + rangoInferior;
+		String resp="";
+		
+		System.out.println("Ingrese cuantos números quiere generar");
+		num = Integer.parseInt(br.readLine());
+		
+		
+		System.out.println("¿Quiere definir los rangos de generación de números aleatorios [S/N] (Cualquier otra respuesta sera tomada como NO.");
+		resp = br.readLine();
+		If (resp.equals("S") || resp.equals("s"))
+		{
+		    System.out.println("Ingresa el rango inferior");
+            rangoInferior = 			
+		}
+		
+	}
+}
