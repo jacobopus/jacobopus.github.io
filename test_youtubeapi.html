@@ -82,7 +82,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
+document.addEventListener("DOMContentLoaded", function() {
+  
+    
 var signinCallback = function (result){
   if(result.access_token) {
     var uploadVideo = new UploadVideo();
@@ -257,7 +259,11 @@ UploadVideo.prototype.pollForVideoStatus = function() {
     }.bind(this)
   });
 };
-      </script>
+
+    
+    
+});
+                </script>
     
 </body>
 </html>
