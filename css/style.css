@@ -1,0 +1,102 @@
+:root {
+  --accent: #0277bd;
+  --light : #ffffff;
+  --text  : #888888;
+
+  --parallax: rgba(255,255,255,.9);
+}
+
+
+.nav {
+  /*background: var(--accent)*/
+  height: 6em;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.minibanner {
+  width: 100%;
+  height: auto;
+}
+
+.minibox {
+  box-shadow: 0px 0px 8px #1b1b1b;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.da-logo {
+  height: auto;
+  display: inline-block;
+  width: 2em;
+}
+
+.primer {
+
+}
+
+.dabox {
+  padding : 0.5em;
+  height   : 16em;
+  font-size: 1.2em;
+}
+
+.video-cont {
+  background: rgba(0,0,0,.6);
+}
+
+p {
+  line-height: 2rem;
+}
+
+.title-text {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.95);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.sidenav-trigger {
+  color: var(--accent);
+}
+
+.parallax-container {
+  min-height: 100vh;
+  line-height: 0;
+  height: auto;
+  color: var(--parallax);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

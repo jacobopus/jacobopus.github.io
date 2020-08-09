@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Pictogramapp</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Creador de Pictogramas">
+	<meta name="Author" content="Informática Colegio del Valle. Andrés Reyes.">
+	<meta name="revisit-after" content="6 days">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="imgs/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="imgs/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="imgs/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="imgs/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="imgs/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="imgs/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="imgs/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="imgs/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="imgs/icons/apple-icon-180x180.png">
+
+	<link rel="icon" type="image/png" sizes="192x192" href="imgs/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imgs/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="imgs/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/icons/favicon-16x16.png">
+	<link rel="manifest" href="imgs/icons/manifest.json">
+
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='css/metro.min.css' />
+	<link rel='stylesheet' href='css/metro-responsive.min.css' />
+	<link rel='stylesheet' href='css/metro-icons.min.css' />
+	<link rel='stylesheet' href='css/metro-responsive.min.css' />
+
+	<link media="all" type="text/css" rel="stylesheet" href="css/pictogramapp.css">
+
+</head>
+
+<body class='bg-darkCyan fg-white'>
+	<div class="container-fluid">
+		<div class="container">
+			<div id="topleftbar" class=" hidden-print">
+				<h1>
+			 	<div class='image-container'>
+					<img src='imgs/logo.png' alt='' title='' />
+				</div>
+				Pictograpp. <span style='font-size:12px;'>Generador de Pictogramas. Por Informática Colegio del Valle.</span></h1>
+
+			</div>
+		</div>
+
+
+		<div id="pictographSaveOptionHolder" class="hidden-print">
+			<div class="" id="pictographSaveOption">
+				<div id="saveHolder">
+
+					<div class="">
+						<span class="pull-right" id="hideSave">Close <i class="fa fa-times-circle"></i></span>
+					</div>
+
+					<div class="">
+						<input id="embedCode" />
+						<input class="hidden" name="save" value="" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="pictographOptions" class="hidden-print container">
+			<div class=''>
+				<div data-role="group" class='toolbar' data-group-type="one-state">
+					<button id='removeRow' class="button"><span class='mif-minus'></span>
+					</button>
+					<button id='addRow' class="button"><span class='mif-plus '></span> </button>
+					<button id='flip' class="button"><span class='mif-loop '></span> </button>
+				</div>
+			</div>
+
+		</div>
+
+		<div class='container '>
+			<div class='flex-grid'>
+				<div class='row flex-just-sb fg-white'>
+
+					<div class='cell size9 flex-just-start padding5'>
+						<div class='box margin-bottom'>
+							<div id="pictograph" class=""></div>
+						</div>
+					</div>
+
+					<div class='cell size2 flex-just-end'>
+
+						<div id="leftbar" class="hidden-print">
+							<div class="">
+
+								<div class="">
+									<p><strong>Instrucciones:</strong></p>
+									<p>Click en el pictograma para cambiar valores.</p>
+									<p>Click en cabeceras y etiquetas para editarlas.</p>
+									<p>Click en <span class='mif-cross'></span> para eliminar una columna.</p>
+									<p>Click en <span class='mif-minus'></span> para disminuir el máximo de elementos.</p>
+									<p>Click en <span class='mif-plus'></span> para aumentar el máximo de elementos.</p>
+									
+								</div>
+
+								<p><a class="button success changeTemplate" data-tmpl="talleresEjemplo" href="#pictograph">Talleres Escolares</a>
+								</p>
+								<p><a class="button success changeTemplate" data-tmpl="deportesEscolares" href="#pictograph">Deportes</a>
+								</p>
+								<p><a class="button success changeTemplate" data-tmpl="fruitExample" href="#pictograph">Frutas</a>
+								</p>
+								<p><a class="button success changeTemplate" data-tmpl="ejemploEnBlanco" href="#pictograph">Colegio del Valle</a>
+								</p>
+								
+								
+								
+								
+	<div class="accordion" data-role="accordion">
+        <div class="frame">
+            <div class="heading bg-cyan">Acerca de</div>
+            <div class="content bg-amber">
+            	
+            	<h3>Pictograpp</h3>
+        								<div class='padding10'>
+           								 <p>Aplicación html5 para generar <a href='https://es.wikipedia.org/wiki/Pictograma' title=''>pictogramas</a>.</p>
+           								 <p>Fue pensada principalmente para ser usada por niños y escuelas.</p>
+           								</div>
+           								
+           								<div class='padding10'> 
+           									<p>
+           									  Pictograpp fue diseñado en el Laboratorio de Informática del 
+           									  <a href='http://www.colegiodelvalle.cl' title=''>Colegio del Valle</a>
+           									</p>
+           									<p>
+           									  Su autor es <a href='http://www.profesorajedrez.cl' title=''>Andrés Reyes </a> a.k.a. Jacobopus a.k.a. Profesor Ajedrez.
+           									</p>
+           									<p>
+           									  Si este software le ha resultado utíl, quiza considere una microdonación patra continuar con este y otros proyectos
+           									  vía Paypal o <a href="mailto:metaljacobo@gmail.com">contactando directamente</a>.
+           									</p>
+           									<p>
+           										<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="26MFU3C9Y7RKJ">
+													<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+													<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+												</form>
+           									</p>
+           								</div>
+           								
+           								<div class='padding10'>
+           								 <p>Pictograpp es gratuita y de código abierto.</p>
+           								 <p>Puede descargar sus fuentes desde <a href='https://drive.google.com/file/d/0B1rbb37M_G3CVktNUE4wMGdMc28/view?usp=sharing' title=''>mi cuenta googledrive</a></p>
+           							     <p>Pictgrapp se encuentra bajo la <a href='https://raw.githubusercontent.com/jacobopus/pictograpp/master/LICENSE' title=''>Licencia Apache 2</a>.</p>
+           							     <p>Este software se provee tal y como esta y el autor espera que sea utíl y 
+           							     	educativo intentando salvaguardar su inocuidad hasta el momento de su 
+           							     	lanzamiento en las plataformas escogidas, pero, asimismo, el Autor no toma 
+           							     	ninguna responsabilidad de cualquier tipo, ni ofrece garantía alguna por 
+           							     	cualquier perjuicio o daño ocasionado por la instalación o uso de este software. 
+           							     	Ud. decide si lo usa o no.</p>
+           							    </div>
+           							  
+            	
+            	
+            </div>
+        </div>
+        
+    </div>
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/pictograpp.js"></script>
+	<script src="js/metro.min.js"></script>
+	
+	<script type="text/javascript">
+		reformal_wdg_domain = "pictograpp";
+		reformal_wdg_mode = 0;
+		reformal_wdg_title = "Pictograph Creator";
+		reformal_wdg_lsize = "";
+		reformal_wdg_color = "#000000";
+		reformal_wdg_bcolor = "#516683";
+		reformal_wdg_tcolor = "#FFFFFF";
+		reformal_wdg_align = "right";
+		reformal_wdg_waction = 0;
+		reformal_wdg_vcolor = "#9FCE54";
+		reformal_wdg_cmline = "#E0E0E0";
+		reformal_wdg_glcolor = "#105895";
+		reformal_wdg_tbcolor = "#FFFFFF";
+		reformal_wdg_bimage = "bea4c2c8eb82d05891ddd71584881b56.png";
+	</script>
+	<script type="text/javascript">
+	</script>
+	
+
+
+	<footer class='' style='margin-top:20px;'>
+		<p class='padding10 text-center'>
+			Pictograpp. Por <a href='http://delvallelabs.blogspot.com'>Laboratorio Informática</a>. <a href='www.colegiodelvalle.cl'>Colegio del Valle</a>. 2016.
+		</p>
+
+	</footer>
+</body>
+
+</html>
