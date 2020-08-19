@@ -64,7 +64,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 100vh;
+  min-height: 60vh;
   line-height: 0;
   height: auto;
   color: var(--parallax);
